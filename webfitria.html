@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Courier;
+  padding: 10px;
+  background: #ffccff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ffccff;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #7B68EE;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #7B68EE;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #9370DB;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ffccff;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ffccff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ffccff;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color:#9370DB;">
+
+<div class="header">
+  <h1>WEBSITE FITRIA</h1>
+  <p>FITRIA OKTAFIANI </p>
+</div>
+
+<div class="topnav">
+  <a href="c:\W3School\css-tutorial\CSS_01Tutorial\CSS59float-01.html">LINK</a>
+  <a href="c:\W3School\css-tutorial\CSS_02Advanced\CSSflexbox.html">LINK</a>
+  <a href="#">LINK</a>
+  <a href="#" style="float:right">LINK</a>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>PANTAI</h2>
+        <h5>Pantai</h5>
+        <div class="" style="height:300px;"><img src="c:\GAMBAR\WhatsApp Image 2024-09-09 at 21.03.57_cb2530ff.jpg" alt="" style="height: 300px;" width="840"></div>
+        <p>Menyukai laut tidak harus menyelam ke dalamnya
+            cukup duduk ditepi nikmati suara omabk,angin,nikmati mataharinya,</p>
+        <p>Aku suka semua tentang pantai,tapi aku gasuka alasan knp aku ke pantai,</p>
+        
+      </div>
+      <div class="card">
+        <h2>ABANG'KU</h2>
+        <h5>TOM AND JERRY</h5>
+        <div class="" style="height:300px;"><img src="c:\GAMBAR\ppp.jpg"alt="" style="height:300px;" width="840"></div>
+        <p>Ketulusan hati seorang abang tidak akan pernah kamu temukan 
+            pada laki laki manapun karna cinta pertama dari adik perempuanya
+            adalah abangnya..</p>
+    
+
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>ME & FRIEND</h2>
+        <div class="" style="height:100px;"><img src="c:\GAMBAR\WhatsApp Image 2024-09-09 at 20.18.50_bad8cacd.jpg"style="height:100px;" widht="500"></div>
+        <p>moment perjuangan bareng</p>
+      </div>
+      <div class="card">
+        <h3>GALERI KU</h3>
+        <div class=""><p><img src="c:\GAMBAR\WhatsApp Image 2024-09-09 at 20.18.50_a57d6228.jpg"height="100" width="100"></p></div>
+        <div class=""><p><img src="c:\GAMBAR\WhatsApp Image 2024-09-09 at 21.00.55_90008aaf.jpg"height="100" width="100"></p></div>
+        <div class=""><p><img src="c:\GAMBAR\WhatsApp Image 2024-09-09 at 21.07.52_92a4556c.jpg" alt="" height="100" width="100"></p></div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>tiktok: ftriaoktfiani</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>THANKYOU!</h2>
+  </div>
+  
+  </body>
+  </html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Courier;
+  padding: 10px;
+  background: #ffccff;
+  
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ffccff;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.header h1 {
+  font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #7B68EE;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #7B68EE;
+  color: black;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #9370DB;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ffccff;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ffccff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ffccff;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="background-color:#9370DB;" align="center">
+
+<div class="header">
+  <h1>ROSSY CAHAYA .M .PE</h1>
+  <p>ROSSY CAHAYA .M PUTRI EDIANSYAH</p>
+</div>
+
+<div class="topnav">
+  <a href="#">LINK</a>
+  <a href="CSS-FLEXBOX.html">LINK</a>
+  <a href="#">LINK</a>
+  <a href="#" style="float:right">LINK</a>
+</div>
+
+<div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Love myself</h2>
+        <h5>ini adalah AKU</h5>
+        <div class="" style="height:300px;"><img src="WIN_20240907_08_56_43_Pro.jpg" alt="" style="height: 300px;" width="840"></div>
+        <p>Betapa penting nya menghargai dan mencintai diri sendiri, mengapa setiap manusia selalu ingin merasa unggul dari orang lain?</p>
+        <p>Kenapa setiap manusia ingin tampil se sempurna mungkin?, kita harus mencintai dan menghargai diri kita sendiri.</p>
+        <p>Tidak ada yang bisa mencintai mu kecuali diri mu sendiri, ketahuilah bahwa semakin kau terpesona oeh dunia.. semakin mudah kamu di bohongi oleh dunia</p>
+        <p>"Kenapa manusia gampang di manipulasi?"</p>
+      </div>
+      <div class="card">
+        <h2>PACAR KU</h2>
+        <h5>ACENG DONAT</h5>
+        <div class="" style="height:300px;"><img src="AcengDonat.jpg"alt="" style="height:300px;" width="840"></div>
+        <p>Wakutu itu hubungan kami sangat indah, sampai pada akhirnyaaa..</p>
+        <p>Akainu membuat sebuah lubang dari punggung hingga dada Aceng..</p>
+        <p>Pacarku itu akhirnya meninggal, tetapi ia mati demi menyelamatkan adik nyaa.</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>ME & FRIEND</h2>
+        <div class="" style="height:100px;"><img src="meandfriend.jpg"style="height:100px;" widht="500"></div>
+        <p>Kami berada di 1 organisasi yang sama yaitu PASUSTAR</p>
+      </div>
+      <div class="card">
+        <h3>GALERI KU</h3>
+        <div class=""><p><img src="pengukuhan.jpg"height="100" width="100"></p></div>
+        <div class=""><p><img src="meanddad.jpg"height="100" width="100"></p></div>
+        <div class=""><p><img src="WhatsApp Image 2024-09-09 at 21.00.55_90008aaf.jpg" alt="" height="100" width="100"></p></div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>IG : Ross.sssssy</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>THANKYOU!</h2>
+  </div>
+  
+  </body>
+  </html>
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: dodgerblue;
+  margin: 10px;
+  padding: 25px;
+  font-size: 0px;
+}
+</style>
+</head>
+<body>
+
+<h1>ROSSY</h1>
+
+<div class="flex-container">
+  <div><img src="DOM1.jpg" alt="" height="70" width="70"></div>
+  <div><img src="DOM2.jpg" alt="" height="70" width="70"></div>
+  <div><img src="DOM3.jpg" alt="" height="70" width="70"></div> 
+  <div><img src="DOM4.jpg" alt="" height="70" width="70"></div>  
+  <div><img src="DOM5.jpg" alt="" height="70" width="70"></div> 
+  <div><img src="DOM6.jpg" alt="" height="70" width="70"></div>
+  <div><img src="DOM7.jpg" alt="" height="70" width="70"></div> 
+  <div><img src="DOM8.jpg" alt="" height="70" width="70"></div> 
+   
+
+</div>
+
+<p>ROSSY <em>ROSSY</em>ROSSY<em>ROSSY</em>.</p>
+
+<p>ROSSY</p>
+
+</body>
+</html>
